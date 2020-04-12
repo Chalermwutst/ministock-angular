@@ -21,6 +21,9 @@ import { FooterFrontComponent } from './shared/frontend/footer-front/footer-fron
 import { HeaderBackendComponent } from './shared/backend/header-backend/header-backend.component';
 import { FooterBackendComponent } from './shared/backend/footer-backend/footer-backend.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +47,9 @@ import { FooterBackendComponent } from './shared/backend/footer-backend/footer-b
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
